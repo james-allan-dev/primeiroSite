@@ -1,0 +1,150 @@
+body {
+    font-family: 'outfit', sans-serif;
+    background-image: url('../imagem/cinza.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.cabecalho {
+    text-align: center;
+    padding: 10px 5;
+    text-transform: uppercase;
+    
+}
+.cabecalho h1{
+    color: beige;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+}
+.personagens-slide {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+  
+    height: 600px;
+    
+    
+
+}
+.lista-personagem {
+    width: 300px;
+    height:600px; 
+    position: relative;
+    border-radius: 10%;
+
+}
+.imagem-personagem {
+    height: 400px;
+    width: 300px;
+
+}
+.btn-seta {
+    background-color: #ffff;
+    width: px;
+    height: auto;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:backgroud-color 0.2s  ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.btn-seta.btn-voltar{
+transform: rotateY(180deg);
+}
+.botao {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.btn-seta:hover {
+    background-color: rgb(143, 22, 86);
+}
+.cartao {
+    opacity: 0;
+    
+    height: 100%;
+    position: absolute;
+    padding: 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+.cartao .imagem-personagem {
+     width: 100%;
+     max-height: 280px;
+}
+.cartao .nome {
+    background-color: rgba(179, 177, 185, 0.11) ;
+    padding: 8px 10px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color:  #ffff;
+    font-size 16px;
+    letter-spacing:  3px;
+}
+.cartao .descricao  {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-radius: 10px;
+    
+    
+    
+}
+.cartao .descricao .titulo {
+background-color: #3333;
+font-size: 20px;
+color: #ffff;
+padding: 1px;
+
+}
+.cartao .descricao .texto {
+    font-size: 13px;
+    padding: 8px;
+    text-align: justify;
+    max-height: 110px;
+    overflow-y: scroll;
+}
+.cartao.fundo-1 {
+    background: url('../imagem/fundo\ 2.jpeg') no-repeat;
+    background-size: cover;
+}
+.cartao.fundo-2 {
+    background: url('../imagem/fundo\ 3.jpeg') no-repeat;
+    background-size: cover;
+    
+}
+.cartao.fundo-3 {
+    background: url('../imagem/FUNDO\ A1.jpeg') no-repeat;
+    background-size: cover;
+}
+.titulo{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color:#333;
+}
+.imagem-personagem{
+    filter: saturate(1.25);
+    filter: brightness(1.2);
+    filter: contrast(1.1);
+}
+
+
